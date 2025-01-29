@@ -14,7 +14,7 @@ public class FlightController {
 
     @Autowired
     private FlightService flightService;
-
+    @CrossOrigin(origins="*")
     @GetMapping
     public ResponseEntity<List<Flight>> getAllFlights() {
         List<Flight> flights = flightService.getAllFlights();
