@@ -46,4 +46,6 @@ public class FlightServiceImpl implements FlightService {
 
     @Override
     public void deleteFlight(Long flightId) {
-        restTemplate.delete(flig
+        restTemplate.delete(flightsurl  + flightId);
+    }
+}
